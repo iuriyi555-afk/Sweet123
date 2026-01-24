@@ -1,238 +1,227 @@
-
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sweet Translator — Privacy Policy</title>
-  <meta name="description" content="Sweet Translator Privacy Policy (RU/EN). Last updated: 2026-01-23." />
   <style>
-    :root{ --bg:#fff; --text:#1b1b1b; --muted:#666; --line:#e6e6e6; --card:#fafafa; }
-    body{ margin:0; background:var(--bg); color:var(--text);
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; line-height:1.5; }
-    .wrap{ max-width:920px; margin:0 auto; padding:28px 16px 44px; }
-    header{ padding:10px 0 18px; border-bottom:1px solid var(--line); margin-bottom:18px; }
-    h1{ margin:0 0 6px; font-size:28px; font-weight:700; }
-    .meta{ margin:0; color:var(--muted); font-size:14px; }
-    .meta strong{ color:var(--text); font-weight:600; }
-    .nav{ margin-top:12px; display:flex; flex-wrap:wrap; gap:10px; font-size:14px; }
-    .nav a{ text-decoration:none; color:var(--text);
-      border:1px solid var(--line); background:var(--card);
-      padding:6px 10px; border-radius:10px; }
-    .nav a.active{ border-color:#999; }
-    section{ padding:18px 0; border-bottom:1px solid var(--line); }
-    h2{ margin:0 0 10px; font-size:20px; }
-    h3{ margin:16px 0 8px; font-size:16px; }
-    p{ margin:8px 0; }
-    ol{ margin:8px 0 8px 20px; padding:0; }
-    li{ margin:6px 0; }
-    .note{ margin-top:12px; padding:12px 14px; background:var(--card);
-      border:1px solid var(--line); border-radius:12px; }
-    .footer{ padding-top:18px; color:var(--muted); font-size:13px; }
-    .small{ font-size:13px; color:var(--muted); margin-top:10px; }
-    .lang{ display:none; }
-    .lang.show{ display:block; }
+    :root { --fg:#111; --muted:#666; --bg:#fff; --card:#f6f7f9; --line:#e6e6e6; --link:#0b57d0; }
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;color:var(--fg);background:var(--bg);}
+    .wrap{max-width:920px;margin:0 auto;padding:24px 18px 56px;}
+    h1{font-size:28px;margin:0 0 6px;}
+    .meta{color:var(--muted);font-size:14px;line-height:1.45;margin-bottom:14px;}
+    .langbar{display:flex;gap:10px;align-items:center;margin:14px 0 18px;}
+    .btn{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 12px;cursor:pointer;font-size:14px;}
+    .btn.active{background:var(--card);border-color:#cfd5dd;}
+    .note{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-top:18px;}
+    .card{border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0;background:#fff;}
+    h2{font-size:18px;margin:18px 0 10px;}
+    h3{font-size:16px;margin:16px 0 8px;}
+    ol{margin:8px 0 0 18px;}
+    li{margin:8px 0;}
+    a{color:var(--link);text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    .hr{height:1px;background:var(--line);margin:14px 0;}
+    .small{font-size:13px;color:var(--muted);}
+    .hidden{display:none;}
+    .pill{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:2px 8px;font-size:12px;color:#2b2b2b;margin-left:6px;}
   </style>
 </head>
-
 <body>
   <div class="wrap">
-    <header>
-      <h1>Sweet Translator — Privacy Policy</h1>
-      <p class="meta">
-        <strong>Last updated:</strong> 2026-01-23<br/>
-        <strong>Developer:</strong> Iurii Shcherbinin &nbsp;|&nbsp;
-        <strong>Contact:</strong> <a href="mailto:sweethelp123@gmail.com">sweethelp123@gmail.com</a>
-      </p>
+    <h1>Sweet Translator — Privacy Policy</h1>
+    <div class="meta">
+      <div><strong>Last updated:</strong> 2026-01-23</div>
+      <div><strong>Developer:</strong> Iurii Shcherbinin &nbsp;|&nbsp; <strong>Contact:</strong> <a href="mailto:sweethelp123@gmail.com">sweethelp123@gmail.com</a></div>
+      <div class="small">This page is published for Google Play compliance and user transparency.</div>
+    </div>
 
-      <div class="nav">
-        <a id="btn-ru" href="#ru">Русский</a>
-        <a id="btn-en" href="#en">English</a>
+    <div class="langbar" role="tablist" aria-label="Language switch">
+      <button class="btn active" id="btn-ru" type="button">Русский</button>
+      <button class="btn" id="btn-en" type="button">English</button>
+    </div>
+
+    <!-- ===================== RU ===================== -->
+    <section id="ru">
+      <div class="card">
+        <h2>Политика конфиденциальности Sweet Translator</h2>
+        <div class="small">Дата вступления в силу: 2026-01-23</div>
+
+        <h3>1. Общие положения</h3>
+        <ol>
+          <li>Настоящая Политика описывает, какие данные обрабатываются в приложении Sweet Translator (далее — «Приложение»), как они используются и как защищаются.</li>
+          <li>Используя Приложение, вы соглашаетесь с условиями этой Политики.</li>
+        </ol>
+
+        <h3>2. Сбор и обработка данных</h3>
+        <ol>
+          <li><strong>Сообщения чата (режим Chat).</strong> В режиме чата Приложение сохраняет и синхронизирует сообщения между устройствами через облачную базу данных <strong>Firebase/Firestore</strong>.
+            Сообщения могут включать введённый текст, переведённый текст, метки времени и технические идентификаторы чата/сообщения (например, <span class="pill">chatId</span>, <span class="pill">lineId</span>), необходимые для синхронизации.</li>
+
+          <li><strong>Аудио.</strong> Приложение <strong>не сохраняет</strong> аудиозаписи локально и <strong>не хранит</strong> аудиофайлы внутри Приложения.</li>
+
+          <li><strong>Облачное распознавание/перевод (AI/Cloud).</strong> При включённом облачном распознавании речи и/или переводе, аудиоданные и/или распознанный текст могут <strong>временно передаваться</strong> в облачные сервисы для обработки (распознавания/перевода).
+            Приложение не сохраняет аудио как файл; обработка может выполняться «эпизодически» (ephemeral processing) на стороне провайдера.</li>
+
+          <li><strong>Покупки и подписки (Google Play Billing).</strong> Если в Приложении включены подписки или внутриигровые покупки, данные о покупке (например, статус подписки, purchase token/идентификатор транзакции) обрабатываются через <strong>Google Play Billing</strong> для предоставления оплаченных функций.
+            Приложение не запрашивает данные банковской карты — оплата обрабатывается Google Play.</li>
+
+          <li><strong>Диагностика и стабильность (при наличии).</strong> В некоторых сборках Приложение может обрабатывать технические данные (например, журналы сбоев/диагностику) для улучшения стабильности и исправления ошибок (например, если включены сервисы Crash/Diagnostics).
+            Эти данные используются только для работы и улучшения Приложения.</li>
+        </ol>
+
+        <h3>3. Использование данных</h3>
+        <ol>
+          <li>Данные используются только для предоставления функций Приложения: синхронизация чата, отображение сообщений, распознавание речи и перевод (по запросу пользователя), подтверждение статуса подписки/покупки.</li>
+          <li>Приложение не использует данные для персонализированной рекламы и не продаёт данные третьим лицам.</li>
+        </ol>
+
+        <h3>4. Хранение данных</h3>
+        <ol>
+          <li><strong>Сообщения чата.</strong> Сообщения могут храниться в <strong>Firebase/Firestore</strong> до удаления пользователем (если такая функция доступна в Приложении) и/или до выполнения запроса на удаление через поддержку.</li>
+          <li><strong>Локальные данные.</strong> На устройстве могут храниться технические и «UX» данные (например, настройки приложения и локальные счётчики непрочитанных), необходимые для корректной работы.</li>
+          <li><strong>Аудио.</strong> Аудиозаписи не сохраняются в Приложении как файлы. При использовании AI/Cloud аудио может временно передаваться провайдеру для обработки.</li>
+        </ol>
+
+        <h3>5. Права пользователя и удаление данных</h3>
+        <ol>
+          <li>Пользователь может запросить удаление данных, связанных с использованием Приложения, написав на адрес поддержки:
+            <a href="mailto:sweethelp123@gmail.com">sweethelp123@gmail.com</a>.</li>
+          <li>Пользователь может отключить облачное распознавание/перевод (если такая опция доступна), что может ограничить функциональность.</li>
+        </ol>
+
+        <h3>6. Безопасность</h3>
+        <ol>
+          <li>Приложение и используемые облачные сервисы применяют стандартные меры безопасности для защиты данных при передаче.</li>
+          <li>Риски утечки снижаются за счёт отсутствия хранения аудио в Приложении, однако при использовании облачных сервисов обработка может выполняться на стороне провайдера.</li>
+        </ol>
+
+        <h3>7. Изменения Политики конфиденциальности</h3>
+        <ol>
+          <li>Приложение может обновлять настоящую Политику время от времени.</li>
+          <li>Существенные изменения могут быть сообщены через обновление Приложения и/или обновление этой страницы.</li>
+        </ol>
+
+        <h3>8. Контакты</h3>
+        <ol>
+          <li>По вопросам конфиденциальности и обработки данных: <a href="mailto:sweethelp123@gmail.com">sweethelp123@gmail.com</a></li>
+          <li>Разработчик: Iurii Shcherbinin</li>
+        </ol>
+
+        <div class="note">
+          <strong>Примечание:</strong> Если в текущей версии Приложения нет кнопки/функции удаления сообщений/чатов, удаление выполняется через обращение в поддержку по email.
+        </div>
       </div>
-
-      <p class="small">This page is published for Google Play compliance and user transparency.</p>
-    </header>
-
-    <!-- RU -->
-    <section id="ru" class="lang">
-      <h2>Русский</h2>
-      <h3>Политика конфиденциальности Sweet Translator</h3>
-      <p><strong>Дата вступления в силу:</strong> 2026-01-23</p>
-
-      <ol>
-        <li>
-          <strong>Общие положения</strong>
-          <ol>
-            <li>Настоящая Политика описывает, какие данные обрабатываются в Sweet Translator (далее — «Приложение»), как они используются и как защищаются.</li>
-            <li>Используя Приложение, вы соглашаетесь с условиями этой Политики.</li>
-          </ol>
-        </li>
-
-        <li>
-          <strong>Сбор и обработка данных</strong>
-          <ol>
-            <li><strong>Сообщения чата (режим Chat).</strong> В режиме чата Приложение сохраняет и синхронизирует сообщения между устройствами через облачную базу данных <strong>Firebase/Firestore</strong>. Сообщения могут включать введённый текст, переведённый текст, метки времени, а также технические идентификаторы чата/сообщения, необходимые для работы синхронизации.</li>
-            <li><strong>Аудио.</strong> Приложение <strong>не сохраняет аудиозаписи</strong> локально и не хранит аудио в Приложении.</li>
-            <li><strong>Облачное распознавание/перевод (AI/Cloud).</strong> При включённом облачном распознавании и/или переводе голосовые данные и/или распознанный текст <strong>могут временно передаваться</strong> в облачные сервисы для обработки (распознавания/перевода). Приложение не сохраняет аудио. Политика хранения и обработки данных у сторонних провайдеров регулируется их условиями.</li>
-          </ol>
-        </li>
-
-        <li>
-          <strong>Использование данных</strong>
-          <ol>
-            <li>Данные используются только для предоставления функций Приложения: синхронизация чата между устройствами, отображение сообщений, выполнение распознавания речи и перевода по запросу пользователя.</li>
-            <li>Приложение не использует данные для персонализированной рекламы и не продаёт данные третьим лицам.</li>
-          </ol>
-        </li>
-
-        <li>
-          <strong>Хранение данных</strong>
-          <ol>
-            <li><strong>Сообщения чата.</strong> Сообщения чата могут храниться в <strong>Firebase/Firestore</strong> до удаления пользователем (если такая функция доступна в Приложении) и/или до выполнения запроса на удаление через поддержку.</li>
-            <li><strong>Локальные данные.</strong> На устройстве могут храниться технические данные и кэш (например, настройки приложения и локальные счётчики непрочитанных), необходимые для корректной работы.</li>
-            <li><strong>Аудио.</strong> Аудиозаписи не сохраняются в Приложении.</li>
-          </ol>
-        </li>
-
-        <li>
-          <strong>Права пользователей</strong>
-          <ol>
-            <li>Пользователь может запросить удаление данных, связанных с использованием Приложения, написав на адрес поддержки: <a href="mailto:sweethelp123@gmail.com">sweethelp123@gmail.com</a>.</li>
-            <li>Пользователь может отключить облачное распознавание/перевод (если такая опция доступна), что может ограничить функциональность Приложения.</li>
-          </ol>
-        </li>
-
-        <li>
-          <strong>Безопасность</strong>
-          <ol>
-            <li>Приложение и используемые облачные сервисы применяют стандартные меры безопасности для защиты данных при передаче.</li>
-            <li>Риски утечки снижаются за счёт отсутствия хранения аудио в Приложении, однако при использовании облачных сервисов обработка может выполняться на стороне провайдера.</li>
-          </ol>
-        </li>
-
-        <li>
-          <strong>Изменения Политики конфиденциальности</strong>
-          <ol>
-            <li>Приложение может обновлять настоящую Политику время от времени.</li>
-            <li>Существенные изменения могут быть сообщены через обновления Приложения и/или обновление этой страницы.</li>
-          </ol>
-        </li>
-
-        <li>
-          <strong>Контакты</strong>
-          <ol>
-            <li>По вопросам конфиденциальности и обработки данных: <a href="mailto:sweethelp123@gmail.com">sweethelp123@gmail.com</a></li>
-            <li>Разработчик: Iurii Shcherbinin</li>
-          </ol>
-        </li>
-      </ol>
-
-      <div class="note"><strong>Примечание:</strong> Если в текущей версии Приложения нет кнопки/функции удаления сообщений, удаление выполняется через обращение в поддержку по email.</div>
     </section>
 
-    <!-- EN -->
-    <section id="en" class="lang">
-      <h2>English</h2>
-      <h3>Sweet Translator Privacy Policy</h3>
-      <p><strong>Effective date:</strong> 2026-01-23</p>
+    <!-- ===================== EN ===================== -->
+    <section id="en" class="hidden">
+      <div class="card">
+        <h2>Sweet Translator Privacy Policy</h2>
+        <div class="small">Effective date: 2026-01-23</div>
 
-      <ol>
-        <li>
-          <strong>General</strong>
-          <ol>
-            <li>This Privacy Policy explains what data is processed in Sweet Translator (the “App”), how it is used, and how it is protected.</li>
-            <li>By using the App, you agree to this Policy.</li>
-          </ol>
-        </li>
+        <h3>1. General</h3>
+        <ol>
+          <li>This Privacy Policy explains what data is processed by Sweet Translator (the “App”), how it is used, and how it is protected.</li>
+          <li>By using the App, you agree to this Policy.</li>
+        </ol>
 
-        <li>
-          <strong>Data processing</strong>
-          <ol>
-            <li><strong>Chat messages (Chat mode).</strong> In Chat mode, the App stores and syncs messages between devices using a cloud database <strong>Firebase/Firestore</strong>. Messages may include entered text, translated text, timestamps, and technical identifiers required for syncing and app functionality.</li>
-            <li><strong>Audio.</strong> The App <strong>does not store audio recordings</strong> locally and does not save audio within the App.</li>
-            <li><strong>Cloud speech recognition/translation (AI/Cloud).</strong> When cloud speech recognition and/or translation is enabled, voice data and/or recognized text <strong>may be temporarily transmitted</strong> to cloud services for processing (speech recognition/translation). The App does not store audio. Third-party handling/retention is governed by their own policies.</li>
-          </ol>
-        </li>
+        <h3>2. Data we process</h3>
+        <ol>
+          <li><strong>Chat messages (Chat mode).</strong> In Chat mode, the App stores and syncs messages between devices using <strong>Firebase/Firestore</strong>.
+            Messages may include typed text, translated text, timestamps, and technical chat/message identifiers (e.g., <span class="pill">chatId</span>, <span class="pill">lineId</span>) required for synchronization.</li>
 
-        <li>
-          <strong>Use of data</strong>
-          <ol>
-            <li>Data is used only to provide the App’s functionality: chat synchronization between devices, displaying messages, and performing speech recognition/translation at the user’s request.</li>
-            <li>The App does not use data for personalized advertising and does not sell data to third parties.</li>
-          </ol>
-        </li>
+          <li><strong>Audio.</strong> The App does <strong>not store</strong> audio recordings locally and does <strong>not keep</strong> audio files inside the App.</li>
 
-        <li>
-          <strong>Data retention</strong>
-          <ol>
-            <li><strong>Chat messages.</strong> Chat messages may be stored in <strong>Firebase/Firestore</strong> until the user deletes them (if such a feature is available in the App) and/or until a deletion request is processed via support.</li>
-            <li><strong>Local data.</strong> The App may store technical data and local cache on the device (e.g., app settings and unread counters) required for proper operation.</li>
-            <li><strong>Audio.</strong> Audio recordings are not stored in the App.</li>
-          </ol>
-        </li>
+          <li><strong>Cloud speech/translation (AI/Cloud).</strong> When cloud speech recognition and/or translation is enabled, audio and/or recognized text may be <strong>temporarily transmitted</strong> to cloud services for processing.
+            The App does not store audio as a file; processing may be performed ephemerally by the provider.</li>
 
-        <li>
-          <strong>User choices</strong>
-          <ol>
-            <li>You may request deletion of data related to your use of the App by contacting support: <a href="mailto:sweethelp123@gmail.com">sweethelp123@gmail.com</a>.</li>
-            <li>You may disable cloud speech/translation features (if available), which may limit certain functionality.</li>
-          </ol>
-        </li>
+          <li><strong>Purchases & subscriptions (Google Play Billing).</strong> If subscriptions or in-app purchases are enabled, purchase-related data (e.g., subscription status, purchase token/transaction identifiers) is processed via <strong>Google Play Billing</strong> to provide paid features.
+            The App does not request payment card details — payments are handled by Google Play.</li>
 
-        <li>
-          <strong>Security</strong>
-          <ol>
-            <li>The App and related cloud services use standard security measures to protect data in transit.</li>
-            <li>Risks are reduced because the App does not store audio; however, cloud processing may be performed by third-party providers.</li>
-          </ol>
-        </li>
+          <li><strong>Diagnostics & stability (if present).</strong> Some builds may process technical data (such as crash logs/diagnostics) to improve stability and fix bugs (e.g., if Crash/Diagnostics services are enabled).
+            This data is used only to operate and improve the App.</li>
+        </ol>
 
-        <li>
-          <strong>Changes to this Policy</strong>
-          <ol>
-            <li>We may update this Privacy Policy from time to time.</li>
-            <li>Material changes may be communicated via App updates and/or updates to this page.</li>
-          </ol>
-        </li>
+        <h3>3. How we use data</h3>
+        <ol>
+          <li>Data is used only to provide App functionality: chat synchronization, displaying messages, speech recognition and translation (on user request), and verifying purchase/subscription status.</li>
+          <li>The App does not use data for personalized advertising and does not sell user data to third parties.</li>
+        </ol>
 
-        <li>
-          <strong>Contact</strong>
-          <ol>
-            <li>For privacy-related questions: <a href="mailto:sweethelp123@gmail.com">sweethelp123@gmail.com</a></li>
-            <li>Developer: Iurii Shcherbinin</li>
-          </ol>
-        </li>
-      </ol>
+        <h3>4. Data retention</h3>
+        <ol>
+          <li><strong>Chat messages.</strong> Chat data may be stored in <strong>Firebase/Firestore</strong> until deleted by the user (if such feature is available) and/or until a deletion request is fulfilled via support.</li>
+          <li><strong>On-device data.</strong> The App may store technical and UX data on the device (e.g., app settings and local unread counters) required for correct operation.</li>
+          <li><strong>Audio.</strong> Audio recordings are not stored in the App as files. When AI/Cloud is used, audio may be temporarily transmitted to a provider for processing.</li>
+        </ol>
 
-      <div class="note"><strong>Note:</strong> If the current App version does not provide an in-app delete feature, deletions are handled via email request to support.</div>
+        <h3>5. User rights & data deletion</h3>
+        <ol>
+          <li>You can request deletion of data related to the App by contacting support at:
+            <a href="mailto:sweethelp123@gmail.com">sweethelp123@gmail.com</a>.</li>
+          <li>You may disable cloud speech/translation (if available), which may limit functionality.</li>
+        </ol>
+
+        <h3>6. Security</h3>
+        <ol>
+          <li>The App and used cloud services apply standard security measures to protect data in transit.</li>
+          <li>Risks are reduced because the App does not store audio files; however, when cloud services are used, processing occurs on the provider side.</li>
+        </ol>
+
+        <h3>7. Changes to this Policy</h3>
+        <ol>
+          <li>We may update this Policy from time to time.</li>
+          <li>Material changes may be communicated via an App update and/or an update to this page.</li>
+        </ol>
+
+        <h3>8. Contact</h3>
+        <ol>
+          <li>Privacy & data questions: <a href="mailto:sweethelp123@gmail.com">sweethelp123@gmail.com</a></li>
+          <li>Developer: Iurii Shcherbinin</li>
+        </ol>
+
+        <div class="note">
+          <strong>Note:</strong> If the current App version does not include an in-app delete button for chats/messages, deletion is performed via email request to support.
+        </div>
+      </div>
     </section>
 
-    <div class="footer">© Sweet Translator — Privacy Policy (RU/EN)</div>
+    <div class="hr"></div>
+    <div class="small">© 2026 Sweet Translator</div>
   </div>
 
   <script>
-    function showLang(lang) {
-      const ru = document.getElementById('ru');
-      const en = document.getElementById('en');
-      const btnRu = document.getElementById('btn-ru');
-      const btnEn = document.getElementById('btn-en');
+    const btnRu = document.getElementById('btn-ru');
+    const btnEn = document.getElementById('btn-en');
+    const ru = document.getElementById('ru');
+    const en = document.getElementById('en');
 
-      ru.classList.toggle('show', lang === 'ru');
-      en.classList.toggle('show', lang === 'en');
-      btnRu.classList.toggle('active', lang === 'ru');
-      btnEn.classList.toggle('active', lang === 'en');
+    function setLang(lang){
+      if(lang === 'en'){
+        en.classList.remove('hidden');
+        ru.classList.add('hidden');
+        btnEn.classList.add('active');
+        btnRu.classList.remove('active');
+        document.documentElement.lang = 'en';
+        history.replaceState(null, '', '#en');
+      } else {
+        ru.classList.remove('hidden');
+        en.classList.add('hidden');
+        btnRu.classList.add('active');
+        btnEn.classList.remove('active');
+        document.documentElement.lang = 'ru';
+        history.replaceState(null, '', '#ru');
+      }
     }
 
-    function applyFromHash() {
-      const h = (location.hash || '#ru').toLowerCase();
-      showLang(h === '#en' ? 'en' : 'ru');
-    }
+    btnRu.addEventListener('click', () => setLang('ru'));
+    btnEn.addEventListener('click', () => setLang('en'));
 
-    document.getElementById('btn-ru').addEventListener('click', (e) => { e.preventDefault(); history.replaceState(null,'','#ru'); applyFromHash(); });
-    document.getElementById('btn-en').addEventListener('click', (e) => { e.preventDefault(); history.replaceState(null,'','#en'); applyFromHash(); });
-
-    window.addEventListener('hashchange', applyFromHash);
-    applyFromHash();
+    // init from hash
+    const h = (location.hash || '').toLowerCase();
+    if(h.includes('en')) setLang('en'); else setLang('ru');
   </script>
 </body>
 </html>
+
