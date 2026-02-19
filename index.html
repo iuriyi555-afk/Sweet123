@@ -16,56 +16,160 @@
     a{color:var(--link);text-decoration:none}
     a:hover{text-decoration:underline}
     code{background:#fff;border:1px solid var(--line);border-radius:8px;padding:2px 6px}
+    .langbar{display:flex;gap:8px;margin:12px 0 16px;}
+    .btn{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 12px;cursor:pointer;font-size:14px;}
+    .btn.active{border-color:var(--link);color:var(--link);font-weight:600;}
+    .small{color:var(--muted);font-size:13px}
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>Privacy Policy</h1>
+    <h1>Sweet Translator — Privacy Policy</h1>
     <div class="meta">
-      App: <strong>Sweet Translator</strong><br/>
       Last updated: <strong>2026-02-18</strong><br/>
       Developer: <strong>Iurii Shcherbinin</strong><br/>
-      Contact: <a href="mailto:sweethelp123@gmail.com">sweethelp123@gmail.com</a>
+      Support: <a href="mailto:sweethelp123@gmail.com">sweethelp123@gmail.com</a>
     </div>
 
-    <div class="card">
-      <p>
-        This policy explains what data Sweet Translator processes, why we process it, and how long we keep it.
-      </p>
+    <div class="langbar" role="tablist" aria-label="Language switch">
+      <button class="btn active" id="btn-en" type="button">English</button>
+      <button class="btn" id="btn-ru" type="button">Русский</button>
     </div>
 
-    <h2>What data the app processes</h2>
-    <ul>
-      <li><strong>Account</strong>: when you sign in with Google, we receive and use a Firebase user identifier (UID). You may also set a display name inside the app.</li>
-      <li><strong>Chat messages</strong>: messages you send/receive are synced via Firebase/Firestore to provide chat functionality.</li>
-      <li><strong>Diagnostics</strong>: basic technical logs may be used to troubleshoot issues when you contact support.</li>
-    </ul>
+    <!-- EN -->
+    <section id="en">
+      <div class="card">
+        <p>
+          This Privacy Policy explains what data Sweet Translator processes, why it is processed, and how long it is kept.
+        </p>
+      </div>
 
-    <h2>How we use data</h2>
-    <ul>
-      <li>Provide chat sync and message delivery.</li>
-      <li>Provide translation features (when enabled).</li>
-      <li>Support and troubleshooting (upon user request).</li>
-    </ul>
-
-    <h2>Data retention (how long we keep data)</h2>
-    <div class="card">
+      <h2>1) Account and sign-in</h2>
       <ul>
-        <li><strong>Chat messages:</strong> the app is designed to keep chat history limited. Messages are marked to expire in about <strong>3 days</strong> and the app also keeps only the <strong>most recent ~50 messages per chat</strong> (older messages are removed on a best-effort basis).</li>
-        <li><strong>Note:</strong> deletion can be delayed if the app is not opened for a long time or the device is offline.</li>
+        <li>The app uses Google Sign-In (OAuth) and Firebase Authentication.</li>
+        <li>We use a Firebase user identifier (UID) to provide app functionality.</li>
+        <li>The app may store a display name you enter in the app.</li>
       </ul>
-    </div>
 
-    <h2>Security</h2>
-    <ul>
-      <li>Network traffic uses standard encryption (HTTPS/TLS) when communicating with cloud services.</li>
-    </ul>
+      <h2>2) Chat data</h2>
+      <ul>
+        <li>Chat messages you send/receive are synced via Firebase/Firestore to provide chat functionality.</li>
+        <li>Message metadata (e.g., timestamps, sender/receiver identifiers inside the chat) may be stored to keep the chat working.</li>
+      </ul>
 
-    <h2>Account and data deletion</h2>
-    <p>
-      You can request deletion of your account and associated data here:
-      <a href="delete.html">Account deletion page</a>.
-    </p>
+      <h2>3) Audio and AI processing</h2>
+      <ul>
+        <li>The app does not store audio recordings as files by default.</li>
+        <li>If cloud features (speech/translation/AI) are enabled, audio and/or recognized text may be transmitted to cloud services for processing.</li>
+      </ul>
+
+      <h2>4) Data retention</h2>
+      <div class="card">
+        <ul>
+          <li><strong>Chat retention:</strong> chat messages are designed to be short-lived. Messages are marked to expire in about <strong>3 days</strong>.</li>
+          <li><strong>History limit:</strong> the app also keeps only the most recent <strong>~50 messages per chat</strong> (older messages are removed on a best-effort basis).</li>
+          <li class="small"><strong>Note:</strong> deletion can be delayed if the app is not opened for a long time or the device is offline.</li>
+        </ul>
+      </div>
+
+      <h2>5) Security</h2>
+      <ul>
+        <li>Data transmitted to cloud services uses standard encryption (HTTPS/TLS).</li>
+      </ul>
+
+      <h2>6) Your choices</h2>
+      <ul>
+        <li>You can request account/data deletion: <a href="delete.html">Delete account / data</a>.</li>
+        <li>You can stop using the app at any time (uninstall).</li>
+      </ul>
+
+      <h2>7) Contact</h2>
+      <p>
+        For privacy questions, contact: <a href="mailto:sweethelp123@gmail.com">sweethelp123@gmail.com</a>
+      </p>
+    </section>
+
+    <!-- RU -->
+    <section id="ru" style="display:none;">
+      <div class="card">
+        <p>
+          Эта Политика конфиденциальности объясняет, какие данные обрабатывает Sweet Translator, зачем и как долго они хранятся.
+        </p>
+      </div>
+
+      <h2>1) Аккаунт и вход</h2>
+      <ul>
+        <li>Приложение использует вход через Google (OAuth) и Firebase Authentication.</li>
+        <li>Для работы приложения используется идентификатор пользователя Firebase (UID).</li>
+        <li>В приложении может храниться имя, которое вы укажете (display name).</li>
+      </ul>
+
+      <h2>2) Данные чата</h2>
+      <ul>
+        <li>Сообщения чата синхронизируются через Firebase/Firestore для работы функции чата.</li>
+        <li>Может сохраняться служебная информация (например, время/отправитель/получатель внутри чата), чтобы чат работал корректно.</li>
+      </ul>
+
+      <h2>3) Голос и AI/облако</h2>
+      <ul>
+        <li>Приложение по умолчанию не хранит аудиозаписи как файлы.</li>
+        <li>Если включены облачные функции (речь/перевод/AI), аудио и/или распознанный текст могут передаваться в облачные сервисы для обработки.</li>
+      </ul>
+
+      <h2>4) Срок хранения данных</h2>
+      <div class="card">
+        <ul>
+          <li><strong>Чат:</strong> сообщения рассчитаны на короткое хранение и помечаются на удаление примерно через <strong>3 дня</strong>.</li>
+          <li><strong>Лимит истории:</strong> хранится только <strong>~50 последних сообщений на чат</strong> (более старые удаляются best-effort).</li>
+          <li class="small"><strong>Важно:</strong> удаление может задержаться, если приложение долго не запускали или устройство офлайн.</li>
+        </ul>
+      </div>
+
+      <h2>5) Безопасность</h2>
+      <ul>
+        <li>Передача данных в облако выполняется по защищённому соединению (HTTPS/TLS).</li>
+      </ul>
+
+      <h2>6) Ваши действия</h2>
+      <ul>
+        <li>Запросить удаление аккаунта/данных: <a href="delete.html">Удаление аккаунта / данных</a>.</li>
+        <li>Можно прекратить использование приложения в любой момент (удалить приложение).</li>
+      </ul>
+
+      <h2>7) Контакты</h2>
+      <p>
+        Вопросы по приватности: <a href="mailto:sweethelp123@gmail.com">sweethelp123@gmail.com</a>
+      </p>
+    </section>
   </div>
+
+  <script>
+    const btnEn = document.getElementById('btn-en');
+    const btnRu = document.getElementById('btn-ru');
+    const secEn = document.getElementById('en');
+    const secRu = document.getElementById('ru');
+
+    function show(lang){
+      if(lang === 'ru'){
+        secRu.style.display = '';
+        secEn.style.display = 'none';
+        btnRu.classList.add('active');
+        btnEn.classList.remove('active');
+        location.hash = '#ru';
+      } else {
+        secEn.style.display = '';
+        secRu.style.display = 'none';
+        btnEn.classList.add('active');
+        btnRu.classList.remove('active');
+        location.hash = '#en';
+      }
+    }
+
+    btnEn.addEventListener('click', ()=>show('en'));
+    btnRu.addEventListener('click', ()=>show('ru'));
+
+    if(location.hash && location.hash.toLowerCase() === '#ru') show('ru');
+    else show('en');
+  </script>
 </body>
 </html>
