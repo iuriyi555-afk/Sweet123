@@ -1,151 +1,141 @@
 <!doctype html>
-<html lang="ru"> 
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sweet Translator — Удаление аккаунта и данных</title>
+  <title>Sweet Translator — Delete account / data</title>
   <style>
-    :root { --fg:#111; --muted:#666; --bg:#fff; --card:#f6f7f9; --line:#e6e6e6; --link:#0b57d0; }
+    :root{--fg:#111;--muted:#666;--bg:#fff;--card:#f7f7f9;--line:#e6e6e6;--link:#0b57d0;}
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;color:var(--fg);background:var(--bg);}
     .wrap{max-width:920px;margin:0 auto;padding:24px 18px 56px;}
-    h1{font-size:28px;margin:0 0 6px;}
-    .meta{color:var(--muted);font-size:14px;line-height:1.45;margin-bottom:14px;}
-    .langbar{display:flex;gap:10px;align-items:center;margin:14px 0 18px;}
+    h1{margin:0 0 6px;font-size:24px;}
+    h2{margin:18px 0 8px;font-size:18px;}
+    .meta{color:var(--muted);font-size:14px;margin-bottom:16px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 14px;margin:10px 0;}
+    .langbar{display:flex;gap:8px;margin:12px 0 16px;}
     .btn{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 12px;cursor:pointer;font-size:14px;}
-    .btn.active{background:var(--card);border-color:#cfd5dd;}
-    .card{border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0;background:#fff;}
-    h2{font-size:18px;margin:18px 0 10px;}
-    h3{font-size:16px;margin:16px 0 8px;}
-    ol{margin:8px 0 0 18px;}
-    li{margin:8px 0;}
-    a{color:var(--link);text-decoration:none;}
-    a:hover{text-decoration:underline;}
-    .note{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-top:18px;}
-    .small{font-size:13px;color:var(--muted);}
-    .hidden{display:none;}
-    code{background:var(--card);padding:2px 6px;border-radius:8px;border:1px solid var(--line);}
+    .btn.active{border-color:var(--link);color:var(--link);font-weight:600;}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    code{background:#fff;border:1px solid var(--line);border-radius:8px;padding:2px 6px}
+    .small{color:var(--muted);font-size:13px}
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>Sweet Translator — Удаление аккаунта и данных</h1>
+    <h1>Sweet Translator — Delete account / data</h1>
     <div class="meta">
-      <div><strong>Last updated:</strong> 2026-02-18</div>
-      <div><strong>Developer:</strong> Iurii Shcherbinin &nbsp;|&nbsp; <strong>Contact:</strong> <a href="mailto:sweethelp123@gmail.com">sweethelp123@gmail.com</a></div>
-      <div class="small">Эта страница нужна для требований Google Play по удалению аккаунта/данных.</div>
+      Last updated: <strong>2026-02-18</strong><br/>
+      Contact: <a href="mailto:sweethelp123@gmail.com">sweethelp123@gmail.com</a>
     </div>
 
     <div class="langbar" role="tablist" aria-label="Language switch">
-      <button class="btn active" id="btn-ru" type="button">Русский</button>
-      <button class="btn" id="btn-en" type="button">English</button>
+      <button class="btn active" id="btn-en" type="button">English</button>
+      <button class="btn" id="btn-ru" type="button">Русский</button>
     </div>
 
-    <!-- ===================== RU ===================== -->
-    <section id="ru">
+    <!-- EN -->
+    <section id="en">
       <div class="card">
-        <h2>Как удалить аккаунт и/или данные</h2>
-        <p>В Sweet Translator вход выполняется через Google (OAuth). Отдельного пароля/регистрации в приложении нет.</p>
-
-        <h3>1) Запрос на удаление аккаунта (Firebase UID) и данных</h3>
+        <h2>How to request deletion</h2>
         <ol>
-          <li>Отправьте письмо на <a href="mailto:sweethelp123@gmail.com?subject=Sweet%20Translator%20—%20Удаление%20аккаунта%20и%20данных">sweethelp123@gmail.com</a> с темой: <code>Sweet Translator — Delete account</code></li>
-          <li>В письме укажите:
-            <ul>
-              <li>ваш Google email (которым вы входили в приложение);</li>
-              <li>по возможности <strong>UID</strong> (если отображается в приложении/логах);</li>
-              <li>что именно удалить: <strong>аккаунт и все данные</strong> или только <strong>данные чата</strong>.</li>
-            </ul>
-          </li>
-          <li>Мы можем запросить подтверждение владения аккаунтом (например, ответом с того же email).</li>
+          <li>Email us at <a href="mailto:sweethelp123@gmail.com">sweethelp123@gmail.com</a></li>
+          <li>Subject: <code>Delete account</code></li>
+          <li>In the message, include the email you used to sign in with Google and (if available) your Firebase UID from the app.</li>
         </ol>
-
-        <h3>2) Какие данные удаляются</h3>
-        <ul>
-          <li>Идентификатор аккаунта (Firebase UID) и связанные записи (если хранятся).</li>
-          <li>Данные чата/сообщения (Firestore), связанные с вашим аккаунтом.</li>
-        </ul>
-
-        <h3>3) Сроки хранения и автоудаление</h3>
-        <ul>
-          <li>Сообщения чата могут автоматически удаляться через короткий срок (например, ~3 дня), если эта политика включена в текущей версии сервиса.</li>
-          <li>После подтверждённого запроса удаление обычно выполняется в разумный срок (как правило, в течение нескольких дней).</li>
-        </ul>
-
-        <div class="note">
-          <strong>Важно:</strong> Покупки/подписки управляются через Google Play. Для отмены подписки используйте раздел Google Play “Подписки”.
-        </div>
+        <p class="small">
+          If you cannot find the UID, just send the Google account email used in the app.
+        </p>
       </div>
+
+      <h2>What will be deleted</h2>
+      <ul>
+        <li>Firebase account identifier (UID) associated with the app (upon request).</li>
+        <li>App chat data stored in Firebase/Firestore linked to that UID (best-effort removal).</li>
+      </ul>
+
+      <h2>Chat retention without a request</h2>
+      <div class="card">
+        <ul>
+          <li>Chat messages are designed to be short-lived: they are marked to expire in about <strong>3 days</strong>.</li>
+          <li>The app also keeps only the <strong>most recent ~50 messages per chat</strong> (older messages are removed on a best-effort basis).</li>
+          <li>Deletion can be delayed if the app is not opened for a long time or the device is offline.</li>
+        </ul>
+      </div>
+
+      <h2>Timing</h2>
+      <ul>
+        <li>We aim to process deletion requests as soon as possible, typically within <strong>30 days</strong>.</li>
+        <li>Google Play purchase history is managed by Google; we cannot erase it from Google systems.</li>
+      </ul>
     </section>
 
-    <!-- ===================== EN ===================== -->
-    <section id="en" class="hidden">
+    <!-- RU -->
+    <section id="ru" style="display:none;">
       <div class="card">
-        <h2>How to delete your account and/or data</h2>
-        <p>Sweet Translator uses Google sign-in (OAuth). There is no separate in-app registration or password.</p>
-
-        <h3>1) Request account (Firebase UID) and data deletion</h3>
+        <h2>Как запросить удаление</h2>
         <ol>
-          <li>Email <a href="mailto:sweethelp123@gmail.com?subject=Sweet%20Translator%20—%20Delete%20account%20and%20data">sweethelp123@gmail.com</a> with subject: <code>Sweet Translator — Delete account</code></li>
-          <li>Include:
-            <ul>
-              <li>your Google email used to sign in;</li>
-              <li>if possible, your <strong>UID</strong> (if shown in the app/logs);</li>
-              <li>what to delete: <strong>account + all data</strong> or only <strong>chat data</strong>.</li>
-            </ul>
-          </li>
-          <li>We may ask for proof of ownership (e.g., replying from the same email).</li>
+          <li>Напишите нам на <a href="mailto:sweethelp123@gmail.com">sweethelp123@gmail.com</a></li>
+          <li>Тема письма: <code>Delete account</code></li>
+          <li>В письме укажите Google-почту, через которую вы входили, и (если есть) ваш Firebase UID из приложения.</li>
         </ol>
-
-        <h3>2) What data is deleted</h3>
-        <ul>
-          <li>Account identifier (Firebase UID) and related records (if stored).</li>
-          <li>Chat/messages data (Firestore) linked to your account.</li>
-        </ul>
-
-        <h3>3) Retention and automatic deletion</h3>
-        <ul>
-          <li>Chat messages may be automatically deleted after a short period (e.g., ~3 days) if enabled in the current service configuration.</li>
-          <li>After a verified request, deletion is typically completed within a reasonable timeframe (usually a few days).</li>
-        </ul>
-
-        <div class="note">
-          <strong>Note:</strong> Purchases/subscriptions are managed by Google Play. To cancel a subscription, use Google Play “Subscriptions”.
-        </div>
+        <p class="small">
+          Если UID найти не получается — достаточно указать email Google-аккаунта, с которым вы входили в приложение.
+        </p>
       </div>
+
+      <h2>Что будет удалено</h2>
+      <ul>
+        <li>Идентификатор аккаунта (Firebase UID), связанный с приложением (по запросу).</li>
+        <li>Данные чатов в Firebase/Firestore, привязанные к этому UID (best-effort удаление).</li>
+      </ul>
+
+      <h2>Хранение чата без запроса</h2>
+      <div class="card">
+        <ul>
+          <li>Сообщения помечаются на удаление примерно через <strong>3 дня</strong>.</li>
+          <li>Также хранится только <strong>последние ~50 сообщений на чат</strong> (более старые удаляются best-effort).</li>
+          <li>Если приложение долго не запускали / устройство офлайн — удаление может задержаться.</li>
+        </ul>
+      </div>
+
+      <h2>Сроки</h2>
+      <ul>
+        <li>Мы стараемся обработать запрос на удаление как можно быстрее, обычно в течение <strong>30 дней</strong>.</li>
+        <li>История покупок Google Play хранится у Google — удалить её из систем Google мы не можем.</li>
+      </ul>
     </section>
 
-    <div class="small">© 2026 Sweet Translator</div>
   </div>
 
   <script>
-    const btnRu = document.getElementById('btn-ru');
     const btnEn = document.getElementById('btn-en');
-    const ru = document.getElementById('ru');
-    const en = document.getElementById('en');
+    const btnRu = document.getElementById('btn-ru');
+    const secEn = document.getElementById('en');
+    const secRu = document.getElementById('ru');
 
-    function setLang(lang){
-      if(lang === 'en'){
-        en.classList.remove('hidden');
-        ru.classList.add('hidden');
-        btnEn.classList.add('active');
-        btnRu.classList.remove('active');
-        document.documentElement.lang = 'en';
-        history.replaceState(null, '', '#en');
-      } else {
-        ru.classList.remove('hidden');
-        en.classList.add('hidden');
+    function show(lang){
+      if(lang === 'ru'){
+        secRu.style.display = '';
+        secEn.style.display = 'none';
         btnRu.classList.add('active');
         btnEn.classList.remove('active');
-        document.documentElement.lang = 'ru';
-        history.replaceState(null, '', '#ru');
+        location.hash = '#ru';
+      } else {
+        secEn.style.display = '';
+        secRu.style.display = 'none';
+        btnEn.classList.add('active');
+        btnRu.classList.remove('active');
+        location.hash = '#en';
       }
     }
 
-    btnRu.addEventListener('click', () => setLang('ru'));
-    btnEn.addEventListener('click', () => setLang('en'));
+    btnEn.addEventListener('click', ()=>show('en'));
+    btnRu.addEventListener('click', ()=>show('ru'));
 
-    const h = (location.hash || '').toLowerCase();
-    if(h.includes('en')) setLang('en'); else setLang('ru');
+    // initial
+    if(location.hash && location.hash.toLowerCase() === '#ru') show('ru');
+    else show('en');
   </script>
 </body>
 </html>
