@@ -5,20 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sweet Translator — Privacy Policy</title>
   <style>
-    :root { --fg:#111; --muted:#666; --bg:#fff; --card:#f7f7f9; --line:#e6e6e9; --link:#0b57d0; }
-    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:var(--fg); background:var(--bg); }
-    .wrap { max-width: 980px; margin: 0 auto; padding: 24px 18px 56px; }
-    h1 { margin: 0 0 6px; font-size: 26px; }
-    h2 { margin: 22px 0 8px; font-size: 18px; }
-    p, li { line-height: 1.5; }
-    .meta { color: var(--muted); font-size: 13px; margin-bottom: 14px; }
-    .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
-    a { color: var(--link); }
-    .langbar { display:flex; gap:10px; margin: 14px 0 10px; }
-    .btn { border:1px solid var(--line); background:#fff; border-radius:10px; padding:8px 12px; cursor:pointer; font-size:14px; }
-    .btn.active { background: var(--card); }
-    small { color:var(--muted); }
-    code { background: #fff; border:1px solid var(--line); border-radius: 8px; padding: 2px 6px; }
+    :root{--fg:#111;--muted:#666;--bg:#fff;--card:#f7f7f9;--line:#e6e6e8;--link:#0b57d0;}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;color:var(--fg);background:var(--bg);}
+    .wrap{max-width:920px;margin:0 auto;padding:24px 18px 56px;}
+    h1{margin:0 0 8px;font-size:26px}
+    h2{margin:18px 0 8px;font-size:18px}
+    p,li{line-height:1.5}
+    .meta{color:var(--muted);font-size:14px;margin-bottom:14px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 14px;margin:12px 0}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .langbar{display:flex;gap:8px;margin:12px 0 6px}
+    .btn{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 12px;cursor:pointer;font-size:14px}
+    .btn.active{background:var(--card);font-weight:600}
+    .small{color:var(--muted);font-size:13px}
+    .hr{height:1px;background:var(--line);margin:16px 0}
   </style>
 </head>
 <body>
@@ -35,34 +36,32 @@
         <button class="btn active" id="btn-en" type="button">English</button>
         <button class="btn" id="btn-ru" type="button">Русский</button>
       </div>
-      <small>
-        This policy explains what data the app processes and how long it is stored.
-        For account/data deletion, see: <a href="./delete.html">Delete account & data</a>.
-      </small>
+      <div class="small">Account/data deletion instructions: <a href="./delete.html">Delete account &amp; data</a></div>
     </div>
 
     <!-- EN -->
-    <section id="en" style="margin-top:14px;">
+    <section id="en">
       <h2>1) What the app does</h2>
       <p>Sweet Translator is a chat-based translation app. It can sync chat messages between devices and optionally use cloud AI features.</p>
 
       <h2>2) Data we process</h2>
       <ul>
-        <li><strong>Account & identifiers:</strong> If you sign in with Google, we use Google OAuth via Firebase Authentication. We may store your Firebase UID and a display name you choose.</li>
-        <li><strong>Chat messages:</strong> Messages you send/receive are stored and synced via Firebase/Firestore to provide the chat feature.</li>
-        <li><strong>Voice / text for AI features:</strong> If you enable cloud AI features, audio and/or recognized text may be transmitted to cloud services for processing. The app does not store audio recordings as files.</li>
-        <li><strong>Purchases / subscriptions:</strong> Payments are handled by Google Play Billing. We store only the purchase/entitlement status needed to unlock features (we do not receive your card details).</li>
-        <li><strong>Ads (if enabled):</strong> The app may show ads via Google Mobile Ads (AdMob). Ad-related identifiers may be used by Google to serve and measure ads.</li>
+        <li><strong>Account & identifiers:</strong> If you sign in with Google, we use Google OAuth via Firebase Authentication. We may store your Firebase UID and the display name you choose.</li>
+        <li><strong>Chat messages (Chat mode):</strong> Messages you send/receive are stored and synced via Firebase/Firestore to provide the chat feature.</li>
+        <li><strong>Voice / text for AI features (optional):</strong> If cloud AI features are enabled, audio and/or recognized text may be transmitted to cloud services for processing. The app does not store audio recordings as files.</li>
+        <li><strong>Purchases / subscriptions:</strong> Payments are handled by Google Play Billing. We store only the entitlement/status needed to unlock features (we do not receive your card details).</li>
+        <li><strong>Ads (if enabled):</strong> The app may show ads via Google Mobile Ads (AdMob). Ad-related identifiers may be used by Google to serve/measure ads.</li>
       </ul>
 
       <h2>3) Data retention (how long we keep data)</h2>
       <ul>
-        <li><strong>Chat messages:</strong> Automatically deleted within <strong>3 days</strong>. Also, we keep at most the <strong>last 50 messages per chat</strong>; older messages are removed.</li>
-        <li><strong>Account data:</strong> Stored while your account is active, or until you request deletion.</li>
+        <li><strong>Chat messages:</strong> Automatically deleted within <strong>3 days</strong>. Also, we keep at most the <strong>last 50 messages per chat</strong>; older messages are removed. Deletion may take a short time to propagate.</li>
+        <li><strong>Account data (UID, display name):</strong> Stored while your account is active, or until you request deletion.</li>
+        <li><strong>On-device data:</strong> App settings and local technical data may remain on your device until you clear app storage or uninstall.</li>
       </ul>
 
       <h2>4) How to delete your account or data</h2>
-      <p>Please use the deletion page: <a href="./delete.html">Delete account & data</a>.</p>
+      <p>Please use the deletion page: <a href="./delete.html">Delete account &amp; data</a>.</p>
 
       <h2>5) Security</h2>
       <p>Data in transit is protected using encryption (HTTPS/TLS) where applicable.</p>
@@ -75,30 +74,31 @@
     </section>
 
     <!-- RU -->
-    <section id="ru" style="margin-top:14px; display:none;">
+    <section id="ru" style="display:none">
       <h2>1) Что делает приложение</h2>
-      <p>Sweet Translator — приложение для перевода в формате чата. Сообщения могут синхронизироваться между устройствами, а также могут использоваться облачные AI-функции.</p>
+      <p>Sweet Translator — приложение для перевода в формате чата. Оно синхронизирует сообщения между устройствами и (опционально) использует облачные AI-функции.</p>
 
       <h2>2) Какие данные обрабатываются</h2>
       <ul>
-        <li><strong>Аккаунт и идентификаторы:</strong> вход через Google (OAuth) с Firebase Authentication. Может храниться Firebase UID и выбранное вами имя (display name).</li>
-        <li><strong>Сообщения чата:</strong> сообщения сохраняются и синхронизируются через Firebase/Firestore для работы чата.</li>
-        <li><strong>Голос/текст для AI-функций:</strong> при включении облачных AI-функций аудио и/или распознанный текст могут передаваться в облачные сервисы для обработки. Аудиозаписи как файлы приложение не хранит.</li>
-        <li><strong>Покупки/подписки:</strong> оплата идёт через Google Play Billing. Мы храним только статус покупки/доступа (данные карты мы не получаем).</li>
-        <li><strong>Реклама (если включена):</strong> приложение может показывать рекламу через Google Mobile Ads (AdMob). Идентификаторы, связанные с рекламой, могут использоваться Google для показа и измерения рекламы.</li>
+        <li><strong>Аккаунт и идентификаторы:</strong> вход через Google (OAuth) с Firebase Authentication. Может сохраняться Firebase UID и выбранное вами имя (display name).</li>
+        <li><strong>Сообщения чата (Chat mode):</strong> сообщения сохраняются и синхронизируются через Firebase/Firestore для работы чата.</li>
+        <li><strong>Голос/текст для AI (опционально):</strong> при включённых облачных AI-функциях аудио и/или распознанный текст могут передаваться в облачные сервисы для обработки. Аудио как файлы приложение не хранит.</li>
+        <li><strong>Покупки/подписки:</strong> платежи обрабатывает Google Play Billing. Мы храним только статус доступа/подписки (данные карты мы не получаем).</li>
+        <li><strong>Реклама (если включена):</strong> возможна реклама через Google Mobile Ads (AdMob), с использованием рекламных идентификаторов Google для показа/измерения.</li>
       </ul>
 
-      <h2>3) Сроки хранения (retention)</h2>
+      <h2>3) Хранение данных (retention)</h2>
       <ul>
-        <li><strong>Сообщения чата:</strong> автоудаление в течение <strong>3 дней</strong>. Также хранится не более <strong>последних 50 сообщений на чат</strong>; более старые удаляются.</li>
-        <li><strong>Данные аккаунта:</strong> хранятся пока аккаунт активен, либо до запроса удаления.</li>
+        <li><strong>Сообщения чата:</strong> автоматически удаляются в течение <strong>3 дней</strong>. Также хранится не более <strong>последних 50 сообщений на чат</strong>; более старые удаляются. Удаление может занимать небольшое время на стороне сервиса.</li>
+        <li><strong>Данные аккаунта (UID, имя):</strong> хранятся пока аккаунт активен или до запроса на удаление.</li>
+        <li><strong>Данные на устройстве:</strong> настройки/технические данные могут оставаться на устройстве до очистки данных приложения или удаления приложения.</li>
       </ul>
 
       <h2>4) Как удалить аккаунт или данные</h2>
-      <p>Используйте страницу: <a href="./delete.html">Удаление аккаунта и данных</a>.</p>
+      <p>Инструкция здесь: <a href="./delete.html">Удаление аккаунта и данных</a>.</p>
 
       <h2>5) Безопасность</h2>
-      <p>Передача данных защищается шифрованием (HTTPS/TLS), где применимо.</p>
+      <p>Передача данных защищена шифрованием (HTTPS/TLS), где применимо.</p>
 
       <h2>6) Дети</h2>
       <p>Приложение не предназначено для детей младше 13 лет.</p>
@@ -106,27 +106,30 @@
       <h2>7) Контакты</h2>
       <p>Вопросы: <a href="mailto:sweethelp123@gmail.com">sweethelp123@gmail.com</a></p>
     </section>
+
+    <script>
+      const en = document.getElementById('en');
+      const ru = document.getElementById('ru');
+      const btnEn = document.getElementById('btn-en');
+      const btnRu = document.getElementById('btn-ru');
+
+      function setLang(lang){
+        if(lang === 'ru'){
+          en.style.display = 'none';
+          ru.style.display = '';
+          btnEn.classList.remove('active');
+          btnRu.classList.add('active');
+        } else {
+          ru.style.display = 'none';
+          en.style.display = '';
+          btnRu.classList.remove('active');
+          btnEn.classList.add('active');
+        }
+      }
+
+      btnEn.addEventListener('click', () => setLang('en'));
+      btnRu.addEventListener('click', () => setLang('ru'));
+    </script>
   </div>
-
-  <script>
-    const en = document.getElementById('en');
-    const ru = document.getElementById('ru');
-    const btnEn = document.getElementById('btn-en');
-    const btnRu = document.getElementById('btn-ru');
-
-    function setLang(l) {
-      const isRu = (l === 'ru');
-      ru.style.display = isRu ? 'block' : 'none';
-      en.style.display = isRu ? 'none' : 'block';
-      btnRu.classList.toggle('active', isRu);
-      btnEn.classList.toggle('active', !isRu);
-      location.hash = isRu ? '#ru' : '#en';
-    }
-
-    btnEn.addEventListener('click', () => setLang('en'));
-    btnRu.addEventListener('click', () => setLang('ru'));
-
-    if (location.hash === '#ru') setLang('ru');
-  </script>
 </body>
 </html>
